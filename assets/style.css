@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9f9;
+}
+
 .courses {
   display: flex;
   flex-flow: row wrap;
@@ -5,8 +9,8 @@
 }
 
 .courseInfo {
-  width: 40%;
   margin: 10px 0;
+  width: 40%;
 }
 
 .courseInfo__button {
@@ -15,9 +19,8 @@
   padding: 10px;
 }
 
-.courseInfo__description {
-  font-style: italic;
-  font-size: 0.9rem;
+.courseInfo__desc {
+  font-weight: 300;
 }
 
 .courseInfo__footer {
