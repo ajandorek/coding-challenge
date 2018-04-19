@@ -14,14 +14,19 @@
 <body>
     <div id="app">
         <div class="container">
-            <div class="card card-props" v-for="(course, i) in courses" :key="i">
-                <div class="card-header bg-primary mb-3">
-                    <h3 class="text-white">{{ course.title }}</h3>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title course-desc">{{ course.description }}</h5>
-                    <p class="card-text">Price: ${{ course.price }}</p>
-                    <p class="card-text">State: {{ course.state.toUpperCase() }}</p>
+            <div class="courses">
+                <div class="card courseInfo" v-for="(course, i) in courses" :key="i">
+                    <div class="card-header courseInfo__header">
+                        <h4 class="courseInfo__header--text">{{ course.title }}</h4>
+                        <h4 class="courseInfo__header--text"> {{ course.state.toUpperCase() }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title courseInfo__desc">{{ course.description }}</h5>
+                        <div class="courseInfo__footer">
+                            <h3 class="card-text courseInfo__price">${{ course.price }}</h3>
+                            <button type="button" class="btn btn-warning courseInfo__button">Start Today</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

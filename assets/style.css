@@ -1,7 +1,54 @@
-.card-props {
-  margin: 10px;
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-.course-desc {
+.courseInfo {
+  width: 40%;
+  margin: 10px 0;
+}
+
+.courseInfo__button {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.courseInfo__description {
   font-style: italic;
+  font-size: 0.9rem;
+}
+
+.courseInfo__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courseInfo__header {
+  background-color: #223441;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+}
+
+.courseInfo__header--text {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.courseInfo__price {
+  color: #ff2a70;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 810px) {
+  .courses {
+    display: flex;
+  }
+
+  .courseInfo {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
