@@ -40,11 +40,13 @@ body {
   display: flex;
   font-size: 10px;
   justify-content: space-between;
+  padding: 15px;
 }
 
 .courseInfo__header--text {
   color: white;
   font-size: 1.1rem;
+  margin: 0;
 }
 
 .courseInfo__price {
